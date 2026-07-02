@@ -25,6 +25,9 @@ const paragraph=[" Avoid daydreaming about the years to come.","You are the most
 const randomIndex = Math.floor(Math.random()*paragraph.length);
 // inside the HTML tag will be blanked this function is called later once the button clicked try again
 typingText.innerHTML ='';
-
+for (const char of paragraph[randomIndex]){
+console.log(char)
+typingText.innerHTML+= `<span>${char}</span>`;
+}
 }
 
