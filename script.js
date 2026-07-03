@@ -32,6 +32,8 @@ typingText.innerHTML+= `<span>${char}</span>`;
 }
 typingText.querySelectorAll('span')[0].classList.add('active');
 document.addEventListener("keydown" ,()=>input.focus());
+typingText.addEventListener("click",()=>{
+    input.focus()})
 }
 
 loadParagraph()
