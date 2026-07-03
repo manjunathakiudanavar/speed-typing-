@@ -1,18 +1,19 @@
 //  typing area
  
- const typingText = document.quesrySelector('.typing-text p');
+ const typingText = document.querySelector('.typing-text p');
  const input = document.querySelector(".wrapper .input-field");
 //  statistics
  const time = document.querySelector(".time span b");
  const mistakes = document.querySelector(".mistake span");
- const wpm = document.quesrySelector(".wpm span");
+ const wpm = document.querySelector(".wpm span");
  const cpm = document.querySelector(".cpm span");
 //  button
- const btn = document.querySelector(".button")
+ const btn = document.querySelector("button")
 //  set value
 let timer;
-let timeLeft = maxTime;
 let maxTime= 60;
+let timeLeft = maxTime;
+
 let charIndex =0;
 let mistake =0;
 let isTyping = false;
@@ -29,6 +30,7 @@ for (const char of paragraph[randomIndex]){
 console.log(char)
 typingText.innerHTML+= `<span>${char}</span>`;
 }
-typingText.quesrySelectorAll('span')[0].classList.add('active');
+typingText.querySelectorAll('span')[0].classList.add('active');
 }
 
+loadParagraph()
