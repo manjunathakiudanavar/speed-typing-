@@ -62,4 +62,10 @@
  .content button:active{
     transform: scale(0.97);
  }
+ .typing-text p span{
+    position: relative;
+ }
+ .typing-text p span.active{
+    color: orange;
+ }
 
