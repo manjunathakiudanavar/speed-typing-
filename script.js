@@ -29,5 +29,6 @@ for (const char of paragraph[randomIndex]){
 console.log(char)
 typingText.innerHTML+= `<span>${char}</span>`;
 }
+typingText.quesrySelectorAll('span')[0].classList.add('active');
 }
 
