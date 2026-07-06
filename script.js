@@ -35,5 +35,15 @@ document.addEventListener("keydown" ,()=>input.focus());
 typingText.addEventListener("click",()=>{
     input.focus()})
 }
+//handling user input//
+function initTyping(){
+    const char = typingText.querySelectorAll('span');
+    const typedChar = input.value.charAt(charIndex);
+    if(charIndex<char.length && timeLeft>0){
+        if(!isTyping){
+         timer = setInterval(initTime,1000);   
+        }
+    }
+}
 
 loadParagraph()
