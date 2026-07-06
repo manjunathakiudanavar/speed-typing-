@@ -41,7 +41,9 @@ function initTyping(){
     const typedChar = input.value.charAt(charIndex);
     if(charIndex<char.length && timeLeft>0){
         if(!isTyping){
-         timer = setInterval(initTime,1000);   
+         timer = setInterval(initTime,1000);  
+         isTyping = true; //after reaching to this line it will get to know that user is typing so when the user types second letter it goes to the condition again later (!isTyping) becomes (!false)>> true and obviously user will be typing and it doesnt enter the block 
+
         }
     }
 }
