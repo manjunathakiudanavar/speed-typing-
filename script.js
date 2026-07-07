@@ -45,6 +45,8 @@ function initTyping(){
          isTyping = true; //after reaching to this line it will get to know that user is typing so when the user types second letter it goes to the condition again later (!isTyping) becomes (!false)>> true and obviously user will be typing and it doesnt enter the block 
 
         }
+        //adding correct incorrect feature
+        
     }
 }
 
