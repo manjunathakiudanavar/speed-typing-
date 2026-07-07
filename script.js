@@ -46,7 +46,15 @@ function initTyping(){
 
         }
         //adding correct incorrect feature
-        
+        if(char[charIndex].innerText===typedChar){
+          char[charIndex].classList.add('correct');
+          console.log("correct");
+        }
+        else{
+            mistake++;
+            char[charIndex].classList.add('incorrect');
+            console.log("incorrect");
+        }
     }
 }
 
