@@ -55,6 +55,15 @@ function initTyping(){
             char[charIndex].classList.add('incorrect');
             console.log("incorrect");
         }
+        charcharIndex++;
+        char[charIndex].classList.add('active');
+
+        mistakes.innerText = mistake;
+        cpm.innerText = charIndex-mistake;
+    }
+    else{
+        clearInterval(timer);
+        input.value='';
     }
 }
 
