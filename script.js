@@ -98,3 +98,4 @@ input.addEventListener("input", (e) => {
 });
 btn.addEventListener("click",reset);
 loadParagraph();
+// whenever there is upper case use upper case cause it has case sensitive
